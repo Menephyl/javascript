@@ -1,0 +1,51 @@
+let corDoSemaforo = 'verde'
+undefined
+if(corDoSemaforo==='verde'){
+ comoProceder ='Siga em Frente'
+}else if (corDoSemaforo ==='amarela'){
+    comoProceder='Siga com cuidado'
+}else if (corDoSemaforo==='vermelha'){
+    comoProceder = 'PARE'
+} else {
+    comoProceder = 'Siga com extremo cuidado, o semáforo não está funcionando'
+}
+'Siga em Frente'
+let corDoSemaforo ='amarela'
+undefined
+if(corDoSemaforo==='verde'){
+ comoProceder ='Siga em Frente'
+}else if (corDoSemaforo ==='amarela'){
+    comoProceder='Siga com cuidado'
+}else if (corDoSemaforo==='vermelha'){
+    comoProceder = 'PARE'
+} else {
+    comoProceder = 'Siga com extremo cuidado, o semáforo não está funcionando'
+}
+'Siga com cuidado'
+let corDoSemaforo ='vermelho'
+undefined
+if(corDoSemaforo==='verde'){
+ comoProceder ='Siga em Frente'
+}else if (corDoSemaforo ==='amarela'){
+    comoProceder='Siga com cuidado'
+}else if (corDoSemaforo==='vermelha'){
+    comoProceder = 'PARE'
+} else {
+    comoProceder = 'Siga com extremo cuidado, o semáforo não está funcionando'
+}
+'Siga com extremo cuidado, o semáforo não está funcionando'
+let corDoSemaforo 
+undefined
+    let co
+
+undefined
+if(corDoSemaforo==='verde'){
+ comoProceder ='Siga em Frente'
+}else if (corDoSemaforo ==='amarela'){
+    comoProceder='Siga com cuidado'
+}else if (corDoSemaforo==='vermelha'){
+    comoProceder = 'PARE'
+} else {
+    comoProceder = 'Siga com extremo cuidado, o semáforo não está funcionando'
+}
+'Siga com extremo cuidado, o semáforo não está funcionando'

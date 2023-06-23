@@ -1,0 +1,85 @@
+const nomeDoCachorro = 'Pipoca';
+
+const verificaNomeCachorro = nomeDoCachorro !== 'Pipoca'; // o valor da variável nomeDoCachorro é diferente de Pipoca?
+
+console.log(verificaNomeCachorro); // false
+VM1227:5 false
+undefined
+console.log(verificanomeCachorro);
+VM1364:1 Uncaught ReferenceError: verificanomeCachorro is not defined
+    at <anonymous>:1:13
+(anônimo) @ VM1364:1
+console.log(verificaNomeCachorro);
+VM1506:1 false
+undefined
+const classificacaoIndicativa = 14;
+
+const idadeDaPessoa = 15;
+
+const verificaIdade = idadeDaPessoa > classificacaoIndicativa;
+
+console.log(verificaIdade);
+VM1510:7 true
+undefined
+const verificaIdade = classificacaoIndicativa > idadeDaPessoa;
+undefined
+console.log(verificaIdade);
+VM1656:1 false
+undefined
+const classificacaoIndicativa = 14;
+
+const idadeDaPessoa = 15;
+
+const verificaIdade = idadeDaPessoa < classificacaoIndicativa;
+
+console.log(verificaIdade);
+VM1661:7 false
+undefined
+const idadeDaPessoa = 18;
+
+const idadeMaioridade = 18;
+
+const verificaIdadeMaior = idadeDaPessoa > idadeMaioridade;
+
+const verificaIdadeMaiorOuIgual = idadeDaPessoa >= idadeMaioridade;
+
+console.log(verificaIdadeMaior);
+console.log(verificaIdadeMaiorOuIgual);
+VM1665:9 false
+VM1665:10 true
+undefined
+let sapato = 15;
+let chinelo = 22;
+let pantufa = 33;
+
+
+let verificacao1 = sapato >=15;
+
+undefined
+let verificacao2 = chinelo >=12;
+
+undefined
+let verificacao = pantufa <=18;
+
+undefined
+console.log(verificacao1);
+
+VM1755:1 true
+undefined
+console.log(verificacao2);
+
+VM1762:1 true
+undefined
+console.log(verificacao3);
+VM1766:1 Uncaught ReferenceError: verificacao3 is not defined
+    at <anonymous>:1:13
+(anônimo) @ VM1766:1
+console.log(verificacao3);
+VM1770:1 Uncaught ReferenceError: verificacao3 is not defined
+    at <anonymous>:1:13
+(anônimo) @ VM1770:1
+let verificacao3 = pantufa <=18;
+undefined
+console.log(verificacao3);
+VM1814:1 false
+undefined
