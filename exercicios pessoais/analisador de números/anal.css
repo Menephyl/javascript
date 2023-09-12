@@ -1,0 +1,30 @@
+
+body{
+background: rgb(93, 93, 93);
+
+font: normal 15pt Times;
+}
+header{
+
+text-align: center;
+}
+
+section{
+background: white;
+border-radius:  10px;
+padding: 15px;
+width: 500px;
+margin: auto;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.081);
+}
+select{
+    color: black;
+    width: 400px;
+   appearance: auto;
+}
+
+footer{
+color: white;
+text-align: center;
+font-style: italic;
+}

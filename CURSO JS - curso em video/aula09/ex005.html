@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+       body{
+        background: rgb(8, 40, 83);
+        color: white;
+        font: normal 18pt Arial;
+
+    }
+
+        
+        
+    </style>
+
+</head>
+<body>
+   
+    <h1>
+        Iniciando estudos DOM 
+    </h1>
+    <p>Aqui vai o resultado</p>
+    <p id="p1">Aprendendo a  usar o <strong>DOM</strong> em JS</p>
+    
+    <div id="m">Clique em mim</div>
+    
+    <br>
+
+    </body>
+
+    <script>
+        let corpo = window.document.body
+       let p1 = window.document.getElementsByTagName('p')[1]
+       window.document.write('Está escrito assim: ' + p1.innerHTML)
+     //  corpo.style.background ='green'
+       p1.style.color ='black'
+       let d = window.document.querySelector('div#m')
+       d.style.background ='black'
+       onclick(m)
+        d.style.background='white'
+       window.document.write('clicou')
+    
+
+      // d.innerText='Estou aguardando...'
+/*
+com query selector ('aaa.aaaa') quando classe e ('aaa#id') quando id 
+        var p1= window.document.getElementById('p1')
+        document.write(p1.innerText) /n
+
+        window.document.write(window.document.charset)  
+       
+       window.document.write(window.navigator.appName )
+       
+       window.document.write(window.document.URL)
+        alert('Essa é a primeira linha n/ E essa é a segunda linha') */
+    </script>
+</html>

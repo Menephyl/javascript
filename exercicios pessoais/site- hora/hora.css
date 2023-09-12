@@ -1,0 +1,32 @@
+@charset "utf-8";
+body{
+background: rgb(255, 255, 255);
+color: rgb(254, 247, 247);
+font: normal 15pt Times;
+}
+header{
+  text-align: center;
+
+}
+section{
+ background: rgba(0, 0, 0, 0.819); 
+ border-radius:  10px;
+padding: 15px;
+width: 500px;
+margin: auto;
+box-shadow: 5px 5px 10px rgba(210, 230, 28, 0);
+} /* no if, altarar de acordo com o tempo também os backgrounds e  box-shadow da section conforme o horário*/
+div#msg{
+    text-align: center;
+    padding: 10px;
+}
+div#foto{
+    text-align: center;
+}
+
+footer{
+color: white;
+text-align: center;
+font-style: italic;
+padding: 10px;
+}

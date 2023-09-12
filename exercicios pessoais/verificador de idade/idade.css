@@ -1,0 +1,28 @@
+body{
+background: black;
+color: rgb(11, 11, 11);
+font: normal 15pt Times;
+}
+header{
+    text-align: center;
+    display:block;
+margin: auto;
+
+}
+section{
+background: white;
+border-radius:  10px;
+padding: 15px;
+width: 500px;
+margin: auto;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.081);
+}
+div{
+    text-align : center;
+}
+footer{
+color: white;
+text-align: center;
+font-style: italic;
+
+}
