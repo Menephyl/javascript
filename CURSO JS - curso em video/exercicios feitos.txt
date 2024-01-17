@@ -1,0 +1,11 @@
+contador - utilizando o for ou while e do while 
+
+receber letras e retornar informações como  elas maiuculas,minusculas, quantidade de letras  em cada palavra 
+
+tabuada - recebe um numero e informa ele  multiplicado de 1  a 10
+
+verificador de idade - receber a idade de uma pessoa e sexo  e retornar em imagens dinamicamente sobre a classificação etaria da mesma 
+
+soma e média 
+
+etc etc 
