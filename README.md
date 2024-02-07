@@ -1,4 +1,4 @@
-# javascript
+# Javascript
  Aprendizado e praticado sobre a linguagem de programação 
 Definir o que é uma variável e que variáveis podem guardar valores;
 
