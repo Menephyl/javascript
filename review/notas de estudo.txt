@@ -1,0 +1,44 @@
+### CSS
+
+Em algum momento, você estará trabalhando em um projeto e descobrirá que o CSS que você pensou que deveria ser aplicado a um elemento não está funcionando. Muitas vezes, o problema é que você cria duas regras que aplicam valores diferentes da mesma propriedade ao mesmo elemento
+
+Portanto, mesmo que a regra com o seletor de elemento <h1> apareça mais abaixo na ordem de origem, aquela com maior especificidade, definida usando o seletor de classe, será aplicada.
+
+A herança também precisa ser entendida neste contexto — alguns valores de propriedade CSS definidos em elementos pais são herdados por seus elementos filhos, e alguns não.
+
+Esses três conceitos (cascata, especificidade e herança) juntos controlam qual CSS se aplica a qual elemento.
+Há três fatores a serem considerados, listados aqui em ordem crescente de importância. Os posteriores anulam os anteriores:
+
+Ordem de origem
+Especificidade
+Importância
+
+Você pode pensar nisso como: a regra que está mais próxima do próprio elemento sobrescreve as anteriores até que a última vença e estilize o elemento.
+
+A ordem da origem só importa quando o peso da especificidade das regras 
+
+Uma prática comum é definir estilos genéricos para os elementos básicos e, a seguir, criar classes para os diferentes
+
+A quantidade de especificidade que um seletor tem é medida usando três valores diferentes (ou componentes), que podem ser pensados como colunas ID, CLASS e ELEMENT nas centenas, dezenas e unidades:
+
+Identificadores: Pontue um nesta coluna para cada seletor de ID contido no seletor geral.
+Classes: pontue um nesta coluna para cada seletor de classe, seletor de atributo ou pseudoclasse contido no seletor geral.
+Elementos: Pontue um nesta coluna para cada seletor de elemento ou pseudoelemento contido no seletor geral.
+
+O seletor universal (*), combinators (en-US) (+, >, ~, ' ') e seletor de ajuste de especificidade (:where() (en-US)) juntamente com seus parâmetros, não têm efeito na especificidade
+https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance para mais duvidas ( Volte aqui se você começar a encontrar problemas estranhos com estilos que não se aplicam conforme o esperado. Pode ser um problema de especificidade.)
+
+Nota: É útil saber que o sinalizador !important existe para que você saiba o que é quando o encontrar no código de outras pessoas. Entretanto, nós recomendamos fortemente que você nunca o use, a menos que seja absolutamente necessário
+
+Uma situação em que você pode ter que usar o sinalizador !important é quando você está trabalhando em um CMS onde você não pode editar os módulos CSS principais, e vs, e você realmente quer sobrescrever um estilo embutido
+
+Relevance: Find all the declaration blocks with a selector match for each element.
+Importance: Sort rules based on whether they are normal or important. Important styles are those that have the !important flag set.
+Origin: Within each of the two importance buckets, sort rules by author, user, or user-agent origin.
+Cascade layers: Within each of the six origin importance buckets, sort by cascade layer. The layer order for normal declarations is from the first layer created to the last, followed by unlayered normal styles. This order is inverted for important styles, with unlayered important styles having the lowest precedence.
+Specificity: For competing styles in the origin layer with precedence, sort declarations by specificity.
+Scoping proximity: When two selectors in the origin layer with precedence have the same specificity, the property value within scoped rules with the smallest number of hops up the DOM hierarchy to the scope root wins. See How @scope conflicts are resolved for more details and an example.
+Order of appearance: When two selectors in the origin layer with precedence have the same specificity and scope proximity, the property value from the last declared selector with the highest specificity wins.
+
+
+
