@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setinterval</title>
+    <script>
+        let nIntervId
+        function changeColor(){
+            nIntervId = setInterval(flashText,2000)
+        }
+        function flashText(){
+            let oElem= document.getElementById("My_box");
+        oElem.style.color = oElem.style.color =="blue"? "gold":"blue"
+        }
+
+        function stopTextColor(){
+            clearInterval(nIntervId)
+        }
+
+
+    </script>
+</head>
+<body onload="changeColor()">
+    <div id="My_box">
+<p>Hello World</p>
+    </div>
+    <button onclick="stopTextColor()">
+        Stop
+
+    </button>
+</body>
+</html>
