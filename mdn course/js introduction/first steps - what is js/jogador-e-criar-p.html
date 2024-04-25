@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    p{
+        font-family: "helvetica neue", helvetica, sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 2px solid rgba(0,0,200,0.6);
+        background: rgba(0,0,0200,0.3);
+        color: rgba(0,0,0200,0.6);
+        box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+        border-radius: 10px;
+        padding: 3px 10px ;
+        display: inline-block;
+        cursor: pointer;
+
+    }
+</style>
+</head>
+<body>
+    
+<p>
+    Player 1: Yan 
+</p>
+<br>
+<button> click counter</button>
+<script>
+    
+    const para = document.querySelector('p')
+    para.addEventListener("click",atualizarNome)
+    function atualizarNome(){
+        let nome = prompt ("Informe um novo nome:")
+        para.textContent = "Player 1:"+ nome;
+    }
+
+    const button = document.querySelector('button')
+
+    button.addEventListener('click',(event) =>{
+        button.textContent = `Click count:${
+            event.detail}`
+    })
+    function criarParagrafo(){
+        let para = document.createElement('p')
+        para.textContent = "Você clicou no botão! la ele "
+        document.body.appendChild(para)
+    }
+    const botoes = document.querySlectorAll("button")
+    for ( var i = 0; i < botoes.length;i++){
+        botoes[i].addEventListener('click',criarParagrago);
+    }
+
+</script>
+</body>
+
+</html>
